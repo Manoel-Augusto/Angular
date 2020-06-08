@@ -1,3 +1,4 @@
+import { ProductsCreateComponent } from './components/product/products-create/products-create.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -11,7 +12,10 @@ const routes: Routes = [{
 {
   path: "product",
   component: ProductCrudComponent
-}];
+},
+{
+path:"products/create",
+component:ProductsCreateComponent}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

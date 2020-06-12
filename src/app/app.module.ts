@@ -24,9 +24,10 @@ import { ProductsCreateComponent } from './components/product/products-create/pr
 import{MatSnackBarModule} from  '@angular/material/snack-bar';
 
 import {FormsModule} from '@angular/forms';
-import {MatFormField} from '@angular/material/form-field';
+import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -52,9 +53,9 @@ import {MatInputModule} from '@angular/material/input';
     MatButtonModule,
     MatSnackBarModule,
     FormsModule,
-    MatFormField,
+    MatFormFieldModule,
     MatInputModule,
-    
+    HttpClientModule,
    
   ],
   providers: [],
